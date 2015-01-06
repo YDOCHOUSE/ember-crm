@@ -1,4 +1,5 @@
 App.Lead = DS.Model.extend({
+  isEditing: false,
   firstName: DS.attr('string'),
   lastName:  DS.attr('string'),
   email:     DS.attr('string'),
