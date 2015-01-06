@@ -18,6 +18,8 @@ gem 'jquery-rails'
 #gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
+gem 'ffaker'
+gem 'puma'
 #ember rails dependencies
 gem 'ember-rails'
 gem 'ember-source', '~> 1.8.1'
