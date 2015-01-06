@@ -24,4 +24,8 @@ article#lead
     view Ember.TextArea value=model.notes
 
   p
-    input type='submit' value='Save Changes' click='saveChanges'
+    input type='submit' value='Save Changes' click="saveChanges"
+    if showUnsavedMessage
+      .unsaved unsaved changes
+    if isSaving
+      .saving saving...
