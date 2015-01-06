@@ -13,7 +13,9 @@ App.Lead = DS.Model.extend({
 })
 
 
-
+App.Lead.reopenClass({
+  STATUSES: ['new', 'in progress', 'closed', 'bad']
+});
 
 // Remember that model is a hook that’s 
 // called whenever the route is entered. 
