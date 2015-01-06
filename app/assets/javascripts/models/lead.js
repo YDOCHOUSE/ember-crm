@@ -15,8 +15,13 @@ App.Lead = DS.Model.extend({
 
 
 App.Lead.reopenClass({
-  STATUSES: ['new', 'in progress', 'closed', 'bad']
+  STATUSES: ['new', 'in progress', 'closed', 'bad'],
+  valid: function(fields) {
+    return fields.firstName && fields.lastName
+  }
+
 });
+
 
 // Remember that model is a hook that’s 
 // called whenever the route is entered. 

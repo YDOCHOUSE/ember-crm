@@ -1,6 +1,9 @@
 article#lead
   h1 New Lead
 
+  if showError
+    .error Leads must have a first and last name.
+
   form
     fieldset
       dl
