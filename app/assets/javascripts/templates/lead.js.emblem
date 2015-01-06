@@ -1,5 +1,11 @@
+outlet
+
 article#lead
   h1= model.fullName
+
+  h1
+  model.fullName
+  link-to 'edit' 'lead.edit' model classNames='edit'
 
   p
     ' Name:
